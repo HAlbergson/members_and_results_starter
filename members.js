@@ -1,6 +1,9 @@
+import * as listRenderer from "./listRenderer.js";
+
 async function membersMain() {
   await buildMembersList();
-  displayMembers(members);
+  const memberList = listRenderer.construct(members);
+  memberList.render();
 }
 
 const members = [];
