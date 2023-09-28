@@ -66,13 +66,7 @@ function constructResult(resultdata) {
         return "brystsvømning";
       }
     },
-    fromTimeToMillis() {
-      const [minutesPart, secondsPart] = this.time.split(":");
-      const [seconds, milliseconds] = secondsPart.split(".");
-      const totalMilliseconds = parseInt(minutesPart, 10) * 60 * 1000 + parseInt(seconds, 10) * 1000 + parseInt(milliseconds, 10);
 
-      return totalMilliseconds;
-    },
     resultType() {
       if (this.isCompetition()) {
         return "stævne";
