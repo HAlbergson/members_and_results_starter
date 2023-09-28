@@ -52,7 +52,6 @@ function constructMember(memberdata) {
     hasPayed: memberdata.hasPayed,
     id: memberdata.id,
     lastName: memberdata.lastName,
-    fullName: "",
     getAge() {
       const today = new Date();
       const age = today.getFullYear() - this.birthday.getFullYear();
